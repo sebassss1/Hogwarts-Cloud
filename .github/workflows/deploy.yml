@@ -1,9 +1,9 @@
-name: Deploy Docker a Elastic Beanstalk
+name: Despliegue de Docker a AWS Elastic Beanstalk
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ] # Se ejecuta automáticamente al hacer push a la rama main
 
-# Permisos necesarios para subir paquetes a GitHub Container Registry
+# Permisos necesarios para que GitHub Actions pueda crear y publicar la imagen de Docker en GitHub Container Registry (GHCR)
 permissions:
   contents: read
   packages: write
