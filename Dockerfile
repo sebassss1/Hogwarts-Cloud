@@ -1,5 +1,5 @@
 # Usamos una imagen base ligera con Java 21
-FROM eclipse-temurin:21-jdk-alpine
+FROM amazoncorretto:21-alpine-jdk
 # Directorio de trabajo dentro del contenedor
 WORKDIR /app
 # Copiamos el JAR generado por Maven al contenedor
